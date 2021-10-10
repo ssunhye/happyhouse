@@ -24,18 +24,19 @@
    - [📑 개발 환경](#-개발-환경)
    - [📑 기술 스택](#-기술-스택-아키텍쳐)
    - [📑 ERD](#-erd)
-   - [📑 Usecase Diagram](#-Usecase-Diagram)
+   - [📑 Usecase Diagram](#-유스케이스)
    - [📑 핵심 기능](#-핵심-기능)
-     <br>
+   <br><br>
 2. [🔈 설계서](#-설계서)
-3. [🔈 구현 결과](#-구현-결과)
-   <br>
+   <br><br>
+4. [🔈 구현 결과](#-구현-결과)
+   <br><br>
    - [📑 Frontend](#frontend)
    - [📑 Backend](#backend)
-     <br>
+   <br><br>
 4. [🔈 팀원 소개 및 역할](#-팀원-소개-및-역할)
 
-<br><br><br><br>
+<br><br>
 
 ---
 
@@ -90,8 +91,7 @@
 
 <br><br>
 
-### 🔍 Usecase Diagram
-
+### 🔍 유스케이스
 <p  align="center">
    <img src = "https://user-images.githubusercontent.com/33833780/136683214-fe6c68c7-ab77-4f6a-bdb4-9a74a692b628.png" width="60%" height="60%">
 </p>
@@ -109,7 +109,7 @@
 
 ## 🥜 설계서
 
-[설계서](report/설계서.pdf)
+#### 🔗 [설계서](report/설계서.pdf)
 
 <br><br>
 
