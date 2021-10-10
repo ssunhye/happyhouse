@@ -9,9 +9,12 @@
 > 🙋김선혜, 조규영
 
 <br>
-![main](https://user-images.githubusercontent.com/33833780/136683154-0260924f-48d2-4901-9933-2f31db1a5f5f.png)
 
-<br><br><br><br>
+<p  align="center">
+   <img src = "https://user-images.githubusercontent.com/33833780/136683154-0260924f-48d2-4901-9933-2f31db1a5f5f.png" width="60%" height="60%">
+</p>
+
+<br><br>
 
 ## 🗂 Content
 
@@ -73,19 +76,25 @@
 
 ### 🔨 기술 스택 아키텍쳐
 
-![techstack](https://user-images.githubusercontent.com/33833780/136683205-0f48c54d-a663-480c-b695-e94729f19101.png)
+<p  align="center">
+   <img src = "https://user-images.githubusercontent.com/33833780/136683205-0f48c54d-a663-480c-b695-e94729f19101.png" width="60%" height="60%">
+</p>
 
 <br><br>
 
 ### 🔍 ERD
 
-![erd](https://user-images.githubusercontent.com/33833780/136683210-fee55382-4ac5-46ed-bd2b-bdc23adcb549.png)
+<p  align="center">
+   <img src = "https://user-images.githubusercontent.com/33833780/136683210-fee55382-4ac5-46ed-bd2b-bdc23adcb549.png" width="60%" height="60%">
+</p>
 
 <br><br>
 
 ### 🔍 Usecase Diagram
 
-![usecase](https://user-images.githubusercontent.com/33833780/136683214-fe6c68c7-ab77-4f6a-bdb4-9a74a692b628.png)
+<p  align="center">
+   <img src = "https://user-images.githubusercontent.com/33833780/136683214-fe6c68c7-ab77-4f6a-bdb4-9a74a692b628.png" width="60%" height="60%">
+</p>
 
 <br><br>
 
@@ -100,13 +109,13 @@
 
 ## 🥜 설계서
 
-[설계서.pdf](https://github.com/ssunhye/happyhouse/files/7316888/default.pdf)
+[설계서](report/설계서.pdf)
 
 <br><br>
 
 ## 🥜 구현 결과
 
-#### 🔗 ![시연영상](report/시연영상.mp4)
+#### 🔗 [시연영상](report/시연영상.mp4)
 
 <br><br>
 
@@ -114,8 +123,8 @@
 
 <br><br>
 |Name|김선혜|조규영|
-|-----|-----|
-|Profile|![member1](https://user-images.githubusercontent.com/33833780/136683324-d1faa665-cf85-492c-b0fd-a81d3c159e52.png)|![member2](https://user-images.githubusercontent.com/33833780/136683326-61f16560-4b42-423a-8e28-806de670921d.png)|
+|-----|-----|-----|
+|Profile|<img src = "https://user-images.githubusercontent.com/33833780/136683324-d1faa665-cf85-492c-b0fd-a81d3c159e52.png" width="200px">|<img src = "https://user-images.githubusercontent.com/33833780/136683326-61f16560-4b42-423a-8e28-806de670921d.png" width="200px">|
 |Position|Frontend, Backend|Frontend, Backend|
 |Git| @wkadnsj | @rbud613|
 
