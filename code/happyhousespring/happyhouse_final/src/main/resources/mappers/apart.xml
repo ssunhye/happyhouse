@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ssafy.happyhouse.model.repo.HouseRepo">
+
+	
+	<select id="searchDong" parameterType="String" resultType="HousePageBean">
+		<![CDATA[
+			select AptName, area, dealAmount,concat(dealYear,'.', dealMonth,'.', dealDay) as dealDate, lat, lng 
+			from (select row_number() OVER(PARTITION BY t1.AptName order by dealYear desc, dealMonth desc, dealDay desc) AS RNUM,
+			t1.AptName, area, dealAmount, dealYear, dealMonth, dealDay, lat, lng 
+			from houseinfo t1, housedeal t2
+			where t2.dong=#{dongname} and t1.dong = t2.dong and t1.AptName = t2.AptName and t1.buildYear = t2.buildYear) as TB 
+			where RNUM=1
+		]]>
+	</select>
+	
+	<select id="searchAptName" parameterType="String" resultType="HousePageBean">
+		<![CDATA[
+			select AptName, area, dealAmount,concat(dealYear,'.', dealMonth,'.', dealDay) as dealDate, lat, lng from (
+			select row_number() OVER(PARTITION BY t1.AptName order by dealYear desc, dealMonth desc, dealDay desc) AS RNUM,
+			t1.AptName, t1.dong, area, dealAmount, dealYear, dealMonth, dealDay, lat, lng 
+			from houseinfo t1, housedeal t2
+			where t2.AptName like concat('%',#{aptName},'%') 
+			and t1.dong = t2.dong and t1.AptName = t2.AptName and t1.buildYear = t2.buildYear) as TB
+			where RNUM=1
+		]]>
+	</select>
+	
+	<select id="HouseDealList" parameterType="String" resultType="HouseDeal">
+		<![CDATA[
+			select AptName,concat(dealYear,'.', dealMonth,'.', dealDay) as dealDate, dealAmount from housedeal
+			where AptName = #{aptName} and dong = #{dong}
+			order by dealDate
+		]]>
+	</select>
+	 
+</mapper>

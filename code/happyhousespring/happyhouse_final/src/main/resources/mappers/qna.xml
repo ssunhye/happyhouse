@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ssafy.happyhouse.model.repo.QnARepo">
+	<insert id="qnaCreate" parameterType="QnA">
+		insert into qna (id, name,title,content) 
+		values (#{id}, #{name}, #{title}, #{content})
+	</insert>
+	
+	<update id="qnaModify" parameterType="QnA">
+		update qna
+		set title = #{title}, content = #{content}
+		where num = #{num}
+	</update>
+	
+	<delete id="qnaDelete" parameterType="int">
+		delete from qna where num=#{num}
+	</delete>
+	
+	<select id="searchqnaList" parameterType="String" resultType="QnA">
+		<![CDATA[
+		select *, (select count(*) from comments where comments.qna_id=qna.num) as commentcount from qna where title like concat('%',#{word},'%') order by num desc
+		]]>
+	</select>
+	
+	<select id="qnaSelect" parameterType="int" resultType="QnA">
+		<![CDATA[
+		select *, (select count(comment) from comments where comments.qna_id=qna.num) as commentcount from qna where num=#{num}
+		]]>
+	</select>
+	
+	<select id="qnaList" resultType="QnA">
+		<![CDATA[
+		select *, (select count(comment) from comments where comments.qna_id=qna.num) as commentcount from qna order by num desc
+		]]>
+	</select>
+	
+</mapper>

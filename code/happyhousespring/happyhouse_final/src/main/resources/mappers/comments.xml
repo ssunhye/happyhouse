@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ssafy.happyhouse.model.repo.CommentsRepo">
+	<insert id="commentsCreate" parameterType="Comments">
+		insert into comments (id, name,comment,qna_id) 
+		values (#{id}, #{name}, #{comment}, #{qna_id})
+	</insert>
+	
+	<update id="commentsModify" parameterType="Comments">
+		update comments
+		set comment = #{comment}
+		where num = #{num}
+	</update>
+	
+	<delete id="commentsDelete" parameterType="int">
+		delete from comments where num=#{num}
+	</delete>
+	
+	<select id="commentsSelect" parameterType="int" resultType="Comments">
+		select * from comments where qna_id=#{qna_id} order by num desc
+	</select>
+	
+</mapper>

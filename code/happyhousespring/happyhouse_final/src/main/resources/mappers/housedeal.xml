@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ssafy.happyhouse.model.repo.HouseDealRepo">
+	
+	<select id="HouseDealList" parameterType="String" resultType="List">
+		<![CDATA[
+			select AptName,concat(dealYear,'.', dealMonth,'.', dealDay) as dealDate, dealAmount from housedeal
+			where AptName = #{aptName} and dong = #{dong}
+			order by dealDate
+		]]>
+	</select>
+	
+	<insert id="inserthouse" parameterType="List">
+		insert into housedeal (dong, aptName, code, dealAmount, buildYear, dealYear, dealMonth, dealDay, area, floor, jibun, type)
+		values 
+		<foreach collection="list" item="item" separator=",">
+        	(#{item.dong}, #{item.aptName}, #{item.code}, #{item.dealAmount}, #{item.buildYear}, #{item.dealYear}, #{item.dealMonth}, #{item.dealDay},#{item.area},#{item.floor},#{item.jibun},#{item.type})
+   		</foreach>
+		
+	</insert>
+	
+	<delete id="deletehouse" >
+		delete from housedeal
+	</delete>
+	 
+</mapper>
