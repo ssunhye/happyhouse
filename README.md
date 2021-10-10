@@ -1,6 +1,6 @@
 # ✔ Happy house
 
-Vue.js 와 Spring boot를 공부하며 처음 만들어본 사이트입니다!
+🧐 Vue.js 와 Spring boot를 공부하며 만든 첫 사이트
 <br>
 
 # 📋 Intro
@@ -9,7 +9,7 @@ Vue.js 와 Spring boot를 공부하며 처음 만들어본 사이트입니다!
 > 🙋김선혜, 조규영
 
 <br>
- ![main](/uploads/9664f876f7798d40c5f02f289da16e31/main.png)
+![main](https://user-images.githubusercontent.com/33833780/136683154-0260924f-48d2-4901-9933-2f31db1a5f5f.png)
 
 <br><br><br><br>
 
@@ -73,19 +73,19 @@ Vue.js 와 Spring boot를 공부하며 처음 만들어본 사이트입니다!
 
 ### 🔨 기술 스택 아키텍쳐
 
-![techstack](/uploads/7acd8628a0cc25252ae1891573082c98/techstack.png)
+![techstack](https://user-images.githubusercontent.com/33833780/136683205-0f48c54d-a663-480c-b695-e94729f19101.png)
 
 <br><br>
 
 ### 🔍 ERD
 
-![erd](/uploads/cb2a2e86ef5a7cb21f6a2d0d5a207784/erd.png)
+![erd](https://user-images.githubusercontent.com/33833780/136683210-fee55382-4ac5-46ed-bd2b-bdc23adcb549.png)
 
 <br><br>
 
 ### 🔍 Usecase Diagram
 
-![usecase](/uploads/800c08d50c84bc48ad8be24df0089186/usecase.png)
+![usecase](https://user-images.githubusercontent.com/33833780/136683214-fe6c68c7-ab77-4f6a-bdb4-9a74a692b628.png)
 
 <br><br>
 
@@ -100,13 +100,13 @@ Vue.js 와 Spring boot를 공부하며 처음 만들어본 사이트입니다!
 
 ## 🥜 설계서
 
-#### 💻 [설계서.pdf](/uploads/9d64abe3c5cfcef302247394fe7c87db/설계서.pdf)
+[설계서.pdf](https://github.com/ssunhye/happyhouse/files/7316888/default.pdf)
 
 <br><br>
 
 ## 🥜 구현 결과
 
-#### 🔗 ![시연영상](/uploads/1b10b9e098cfdaaecf408fb1c2c34d7f/시연영상.mp4)
+#### 🔗 ![시연영상](report/시연영상.mp4)
 
 <br><br>
 
@@ -115,7 +115,7 @@ Vue.js 와 Spring boot를 공부하며 처음 만들어본 사이트입니다!
 <br><br>
 |Name|김선혜|조규영|
 |-----|-----|
-|Profile|![member1](/uploads/c806716861755da951f0fc10816a62be/member1.png)|![member2](/uploads/fd4b32553239fb523a24bc2c21adb8c2/member2.png)|
+|Profile|![member1](https://user-images.githubusercontent.com/33833780/136683324-d1faa665-cf85-492c-b0fd-a81d3c159e52.png)|![member2](https://user-images.githubusercontent.com/33833780/136683326-61f16560-4b42-423a-8e28-806de670921d.png)|
 |Position|Frontend, Backend|Frontend, Backend|
 |Git| @wkadnsj | @rbud613|
 
